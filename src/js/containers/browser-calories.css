@@ -3,7 +3,26 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 200px;
+}
+
+.left {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+}
+
+.right {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
 }
 
 .hori-center {

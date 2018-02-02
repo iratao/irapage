@@ -154,28 +154,32 @@ export default class BrowserCalories extends Component {
 
   render() {
     return (
-      <div>
-        <div className={`${styles['new-template']} ${styles.center}`}>
-          {
-            Object.keys(CalorieType).map((key) => {
-              let type = CalorieType[key]
-              return(
-                <InputComponent
-                  key={type}
-                  name={type} value={this.state.newTemplate[type]}
-                  onChange={(value) => {
-                    this.setState((prevSate) => ({
-                      newTemplate: {
-                        ...prevSate.newTemplate,
-                        [type]: value
-                      }
-                    }))
-                  }}/>
-                )
-              }
-            )
-          }
-          <button className={styles.add} type="submit" onClick={this.onAddHandler.bind(this)}>添加</button>
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <div className={`${styles['new-template']} ${styles.center}`}>
+            {
+              Object.keys(CalorieType).map((key) => {
+                let type = CalorieType[key]
+                return(
+                  <InputComponent
+                    key={type}
+                    name={type} value={this.state.newTemplate[type]}
+                    onChange={(value) => {
+                      this.setState((prevSate) => ({
+                        newTemplate: {
+                          ...prevSate.newTemplate,
+                          [type]: value
+                        }
+                      }))
+                    }}/>
+                  )
+                }
+              )
+            }
+            <button className={styles.add} type="submit" onClick={this.onAddHandler.bind(this)}>添加</button>
+          </div>
+        </div>
+        <div className={styles.right}>
           {this.state.calorieBars}
         </div>
       </div>
