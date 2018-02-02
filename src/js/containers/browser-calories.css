@@ -23,6 +23,7 @@
 
 .container {
   display: flex;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .hori-center {
@@ -37,6 +38,7 @@
 .input {
   padding: 10px 5px;
   width: 100%;
+  border: 1px solid rgba(19, 35, 47, 0.9);
 }
 
 .input-label {
@@ -44,17 +46,20 @@
   transform: translateY(50%);
   left: 10px;
   transition: all 0.25s ease;
+  color: #a0b3b0;
 }
 
 .input-label-active {
+  color: #20233F;
   left: 0px;
   transform: translateY(50%) translateX(-120%);
 }
 
 .add {
+  color: #20233F;
   display: block;
   width: 160px;
-  padding: 15px 0;
+  padding: 7px 0;
   border: 0;
   font-size: 1.5rem;
   font-weight: 400;
