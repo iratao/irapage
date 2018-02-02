@@ -1,0 +1,92 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.hori-center {
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.input {
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.input-label {
+  position: absolute;
+  transform: translateY(50%);
+  left: 10px;
+  transition: all 0.25s ease;
+}
+
+.input-label-active {
+  left: 0px;
+  transform: translateY(50%) translateX(-120%);
+}
+
+.add {
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: beige;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.calorie {
+  position: relative;
+  height: 100%;
+}
+
+.calorie-bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.html {
+  background-color: #CACFD2;
+}
+
+.js {
+  background-color: #F7DC6F;
+}
+
+.css {
+  background-color: #76D7C4;
+}
+
+.images {
+  background-color: #45B39D;
+}
+
+.fonts {
+  background-color: #85C1E9;
+}
+
+.ads {
+  background-color: #33E9FF;
+}
+
+.default {
+  background-color: #FDFEFE;
+}
+
+
+
