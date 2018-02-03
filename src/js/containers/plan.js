@@ -7,7 +7,7 @@ export default class Plan extends Component {
   render() {
     return (
       <div className={styles.center}>
-        <h2>新年计划</h2>
+        <h2>2018新年计划</h2>
         <ul className={styles.list}>
           <li>听完《薛兆丰的北大经济学课》</li>
           <li>听完《蒋勋细说红楼梦》</li>

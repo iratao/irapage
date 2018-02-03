@@ -19,7 +19,7 @@ export class Root extends Component {
     return (
       <div>
         <ul className={`${styles.list} ${styles.center} ${showMenu ? styles.show : styles.hide}`}>
-          <li><NavLink to='/plan'>新年计划</NavLink></li>
+          <li><NavLink to='/plan'>2018新年计划</NavLink></li>
           <li><NavLink to='/video'>视频炸弹</NavLink></li>
           <li><NavLink to='/browsercalories'>浏览器卡路里</NavLink></li>
         </ul>
