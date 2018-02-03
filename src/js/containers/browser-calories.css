@@ -22,6 +22,10 @@
   width: 200px;
 }
 
+.intro {
+  width: 300px;
+}
+
 .container {
   display: flex;
   font-family: 'Titillium Web', sans-serif;
@@ -59,13 +63,12 @@
 .add {
   color: #20233F;
   display: block;
-  width: 160px;
+  width: 150px;
   padding: 7px 0;
   border: 0;
   font-size: 1.5rem;
   font-weight: 400;
   background-color: beige;
-  margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 10px;
 }

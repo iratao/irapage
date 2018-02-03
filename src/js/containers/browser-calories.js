@@ -154,7 +154,10 @@ export default class BrowserCalories extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.left}>
-          <div className={`${styles['new-template']} ${styles.center}`}>
+          <div className={`${styles.center}`}>
+            <h2>Browser Calorie</h2>
+            <p className={styles.intro}>前端性能优化就像理财。面对有限的资源需要一个合理的支出计划。使用Browser Calorie帮助你生成可视化的浏览器资源配置计划。</p>
+            <div className={`${styles['new-template']}`}>
             {
               Object.keys(CalorieType).map((key) => {
                 let type = CalorieType[key]
@@ -174,6 +177,7 @@ export default class BrowserCalories extends Component {
                 }
               )
             }
+            </div>
             <button className={styles.add} type="submit" onClick={this.onAddHandler.bind(this)}>添加</button>
           </div>
         </div>
