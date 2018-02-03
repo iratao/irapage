@@ -82,6 +82,9 @@
   height: 30px;
   margin: 0 auto;
   margin-bottom: 20px;
+  background-image: url("../../img/grid.png");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .html {

@@ -66,7 +66,6 @@ class InputComponent extends Component{
     this.setState({
       isActive: true
     })
-    // this.label && this.label.classList.add(styles['input-label-active'])
   }
 
   blurHandler(event){
@@ -75,7 +74,6 @@ class InputComponent extends Component{
         isActive: false
       })
     }
-    // this.label && this.label.classList.remove(styles['input-label-active'])
   }
 
   onChangeHandler(event) {
