@@ -112,7 +112,7 @@ export default class BrowserCalories extends Component {
     super(props)
     this.state = {
       newTemplate: {},
-      calorieBars: []
+      calorieBar: null
     }
     this.calories = {
       'name': 'Homepage',
@@ -146,7 +146,7 @@ export default class BrowserCalories extends Component {
       }
     }
     this.setState((prevState) => ({
-      calorieBars: prevState.calorieBars.concat(<CalorieBar key={prevState.calorieBars.length} calories={newCalorieBar}/>)
+      calorieBar: <CalorieBar calories={newCalorieBar}/>
     }))
   }
 
@@ -178,7 +178,7 @@ export default class BrowserCalories extends Component {
           </div>
         </div>
         <div className={styles.right}>
-          {this.state.calorieBars}
+          {this.state.calorieBar}
         </div>
       </div>
 
