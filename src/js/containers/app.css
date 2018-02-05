@@ -1,3 +1,16 @@
+.app {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #20233F;
+}
+
+a:hover {
+  color: #6d6d6d;
+}
+
 .list {
   list-style-type: none;
 }
@@ -15,4 +28,15 @@
 
 .show {
   display: block;
+}
+
+.font-stack {
+  font-family: 'Starbucks', Lato, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@font-face {
+  font-family: 'Starbucks';
+  src: url('../../fonts/avenir-85-heavy.ttf') format('truetype');
 }
