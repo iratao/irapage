@@ -25,8 +25,8 @@ module.exports = {
       		loader: "html-loader"
       	}]
       }, {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+        test: /\.(s*)css$/,
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader'
       }, {
         test: /\.(jpe?g|png|gif|svg|woff|ttf)$/i,
         loader: "file-loader"

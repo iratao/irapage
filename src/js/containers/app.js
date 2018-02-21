@@ -12,6 +12,7 @@ import Plan from './plan'
 import Video from './video'
 import Music from './music'
 import BrowserCalories from './browser-calories'
+import CSS from './100css'
 
 export class Root extends Component {
   render() {
@@ -25,6 +26,7 @@ export class Root extends Component {
           <li><NavLink to='/video'>视频炸弹</NavLink></li>
           <li><NavLink to='/browsercalories'>浏览器卡路里</NavLink></li>
           <li><NavLink to='/fontstack' className={styles['font-stack']}>Font Stack Reserve®</NavLink></li>
+          <li><NavLink to='/100css'>CSS</NavLink></li>
         </ul>
       </div>)
   }
@@ -40,6 +42,7 @@ export default class App extends Component {
           <Route path="/video" component={Video}/>
           <Route path="/music" component={Music} />
           <Route path="/browsercalories" component={BrowserCalories}/>
+          <Route path="/100css" component={CSS}/>
         </div>
       </Router>)
   }
