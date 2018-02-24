@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { Route } from 'react-router-dom'
 
 import CSS003 from '../components/CSS003'
+import CSS004 from '../components/CSS004'
 import styles from './100css.scss'
 
 class CSS002 extends Component {
@@ -46,6 +47,7 @@ export default class CSS extends Component {
       <div>
         <Route path={`${this.props.match.url}/css002`} component={CSS002}/>
         <Route path={`${this.props.match.url}/css003`} component={CSS003}/>
+        <Route path={`${this.props.match.url}/css004`} component={CSS004}/>
       </div>
     )
   }
